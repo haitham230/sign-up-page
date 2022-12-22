@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    background-image: url("landing.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    color: #ccc;
+    overflow: hidden;
+}
+.container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba( 0 0 0 /30%);
+}
+.container .form-content{
+    padding: 20px 60px;
+    background-color: rgba( 0 0 0 /30%);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    box-shadow: 10px 10px 20px rgba(27, 27, 27, 0.797);
+    flex-basis: 500px;
+    max-width:calc(100% - 30px);
+    position: relative;
+}
+
+.container .form-content form .main-input{
+    display: block;
+    margin-top: 15px;
+    padding: 10px 10px;
+    background: none;
+    border: 1px solid rgb(208, 146, 30);
+    outline: none;
+    caret-color: rgb(208, 146, 30);
+    color: #ccc;
+    width: 100%;
+    border-radius:20px ;
+    -webkit-border-radius:20px ;
+    -moz-border-radius:20px ;
+    -ms-border-radius:20px ;
+    -o-border-radius:20px ;
+    box-shadow: 5px 5px 5px rgba(208, 146, 30, 0.442);
+}
+@media(max-width: 767px){
+    .container{
+        background-image: url("landing-mob.jpg");
+        background-size: cover;
+    }
+    .container .form-content{
+        padding: 40px;
+    }
+    .container form input::placeholder{
+       font-size: 10px;
+    }
+}
+.container .form-content form .sign{
+    display: block;
+    font-size: 60px;
+    margin: 0 auto 20px;
+    text-align: center;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.container .form-content form .gender{
+    display: inline-block;
+    margin: 10px 10px 0 0;
+    font-size: 17px;
+}
+.container form input[type="radio"]{
+ display: inline-block;
+ margin-right: 10px;
+ accent-color: rgb(208, 146, 30);
+}
+.container form .radio-lab{
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 14px;
+}
+.container form [type="checkbox"]{
+    display: inline-block;
+    margin-top: 20px;
+    accent-color: rgb(208, 146, 30);
+}
+.container form .che-lable{
+    display: inline-block;
+    margin-left: 10px;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.container form input[type="submit"]{
+    display: block;
+    margin: auto;
+    border: none;
+    padding: 10px 20px;
+    color: #ccc;
+    background: none;
+    border: 1px solid rgb(208, 146, 30);
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-size: 14px;
+    width: calc(100% - 100px);
+    text-transform: uppercase;
+    font-weight: 500;
+    box-shadow: 5px 5px 5px rgba(208, 146, 30, 0.442);
+}
+
+.container form input::placeholder{
+    color: #ccc;
+    padding: 10px;
+    text-transform: capitalize;
+}
+.container form input:focus{
+    outline: none;
+}
+
