@@ -90,6 +90,7 @@
     display: inline-block;
     margin-right: 20px;
     font-size: 14px;
+    cursor: pointer;
 }
 .container form [type="checkbox"]{
     display: inline-block;
@@ -101,6 +102,7 @@
     margin-left: 10px;
     text-transform: capitalize;
     font-size: 14px;
+    cursor: pointer;
 }
 .container form input[type="submit"]{
     display: block;
